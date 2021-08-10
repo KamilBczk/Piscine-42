@@ -1,0 +1,6 @@
+Credentials cache: API:1E9A1C04-76BB-43EE-ADE4-2149CB0344CF
+        Principal: kbiczyk@S19.BE
+
+  Issued                Expires               Principal
+Aug  3 19:38:00 2021  Aug  4 05:38:00 2021  krbtgt/S19.BE@S19.BE
+Aug  3 19:38:02 2021  Aug  4 05:38:00 2021  HTTP/san-ssd.s19.be@S19.BE
