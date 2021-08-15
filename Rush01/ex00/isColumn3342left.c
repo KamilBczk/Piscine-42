@@ -6,11 +6,11 @@
 /*   By: xle-boul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 18:44:44 by xle-boul          #+#    #+#             */
-/*   Updated: 2021/08/15 18:45:56 by xle-boul         ###   ########.fr       */
+/*   Updated: 2021/08/15 20:19:55 by kbiczyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void autoFillRow(int table[6][6]);
+void	autoFillRow(int table[6][6]);
 
 /* 3 | x x 3 4 | 2  => 3 | 2 1 3 4 | 2 */
 
@@ -29,7 +29,7 @@ void	isRow3342down(int table[6][6])
 		}
 		y++;
 	}
-    autoFillRow(table);
+	autoFillRow(table);
 }
 
 void	isRow3342up(int table[6][6])

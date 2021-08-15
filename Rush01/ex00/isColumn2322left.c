@@ -6,7 +6,7 @@
 /*   By: xle-boul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 18:34:30 by xle-boul          #+#    #+#             */
-/*   Updated: 2021/08/15 18:38:11 by xle-boul         ###   ########.fr       */
+/*   Updated: 2021/08/15 21:25:11 by kbiczyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void	isRow2322down(int table[6][6])
 		}
 		y++;
 	}
+	isColumn2242left(table);
 }
 
 void	isRow2322up(int table[6][6])
