@@ -15,53 +15,6 @@
 
 void	isColumn1left(int table[6][6]);
 
-/*
-
-	####### AUTOFILL #######
-	####### AUTOFILL #######
-	####### AUTOFILL #######
-
-*/
-
-void	autoFillRow(int table[6][6])
-{
-	int	results[3];
-	int	cords[2];
-
-	cords[0] = 1;
-	cords[1] = 1;
-	results[0] = 0;
-	results[1] = 0;
-	while (cords[1] != 5)
-	{
-		while (cords[0] != 5)
-		{
-			if (table[cords[1]][cords[0]] == 0)
-			{
-				results[2] = cords[0];
-				results[0]++;
-			}
-			else
-				results[1] += table[cords[1]][cords[0]];
-			cords[0]++;
-		}
-		if (results[0] == 1)
-			table[cords[1]][results[2]] = 10 - results[1];
-		results[0] = 0;
-		results[1] = 0;
-		cords[0] = 1;
-		cords[1]++;
-	}
-}
-
-/*
-
-	####### CODE #######
-	####### CODE #######
-	####### CODE #######
-
-*/
-
 void	ft_putchar(char z)
 {
 	write(1, &z, 1);
@@ -83,7 +36,8 @@ void	printTable(int tab[6][6])
 /* On parcours chaque case et on la mets a 0 */
 			ft_putchar(' ');
 			ft_putchar(tab[y + 1][x + 1] + '0');
-			ft_putchar(' ');
+			if(!(x==3))
+                ft_putchar(' ');
 			x++;
 		}
 		ft_putchar('\n');
@@ -247,7 +201,8 @@ void	bus(char *numbersRaw)
 		lancementDesConditions(table);
 		lancementDesConditions(table);
 		lancementDesConditions(table);
-		autoFillRow(table);
+        lancementDesConditions(table);
+        lancementDesConditions(table);
 		printTable(table);
 	}
 }

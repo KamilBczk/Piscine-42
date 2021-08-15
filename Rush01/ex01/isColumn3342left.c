@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+void autoFillRow(int table[6][6]);
+
 /* 3 | x x 3 4 | 2  => 3 | 2 1 3 4 | 2 */
 
 void	isRow3342down(int table[6][6])
@@ -27,6 +29,7 @@ void	isRow3342down(int table[6][6])
 		}
 		y++;
 	}
+    autoFillRow(table);
 }
 
 void	isRow3342up(int table[6][6])

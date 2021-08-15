@@ -39,7 +39,7 @@ void	isRow233up(int table[6][6])
 	{
 		if (table[0][y] == 2 && table[5][y] == 3 && table[3][y] == 3)
 		{
-			table[2][y] = 3;
+			table[2][y] = 4;
 		}
 		y++;
 	}
